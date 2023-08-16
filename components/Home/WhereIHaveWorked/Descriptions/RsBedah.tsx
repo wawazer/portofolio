@@ -2,19 +2,23 @@ import React from "react";
 import ArrowIcon from "../../../Icons/ArrowIcon";
 import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
 
-export default function TrouveTavoie() {
+export default function RsBedah() {
   const tasks = [
     {
-      text: "Spearhead & implemented a new design user workflow system for the Frond-End Architecture of a NFT Marketplace.",
-      keywords: ["NFT Marketplace"],
+      text: "Create a website, PHP, Illustrator, Digital Marketing",
+      keywords: ["PHP", "Illustrator", "Digital Marketing"],
     },
     {
-      text: "Worked with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Next.js/React, AWS and Vercel.",
-      keywords: ["Next.js/React", "AWS", "Vercel"],
+      text: "Designing and creating company visual requirements (flyer, Company Profile, etc.)",
+      keywords: ["flyer", "Company Profile", "visual requirements"],
     },
     {
-      text: "Interfaced with developers on a daily basis, providing technological expertise.",
-      keywords: [],
+      text: "Maintenance a Hardware.",
+      keywords: ["Hardware"],
+    },
+    {
+      text: "Maintenance social media",
+      keywords: ["social media"],
     },
   ];
 
@@ -24,20 +28,20 @@ export default function TrouveTavoie() {
         <div className="flex flex-col spacey-y-2">
           {/* Title */}
           <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-            Software Engineer{" "}
-            <span className="text-AAsecondary">@ Blockchain</span>
+            IT Staff & UI Graphic Designer
+            <span className="text-AAsecondary">@ RS Bedah Manyar</span>
           </span>
           {/* Date */}
           <span className="font-mono text-xs text-gray-500">
-            Mars - August 2022
+            Oct 2018 - Jan 2020
           </span>
           <span
             className="font-mono text-xs text-AAsecondary hover:cursor-pointer"
             style={{ fontSize: "0.6rem" }}
             // set on click to open the website
-            onClick={() => window.open("https://pelindo.co.id/", "_blank")}
+            onClick={() => window.open("https://rsmmcsby.co.id", "_blank")}
           >
-            pelindo.co.id
+            rsmmcsby.co.id
           </span>
         </div>
         <div className="flex flex-col space-y-4 sm:text-sm text-xs">

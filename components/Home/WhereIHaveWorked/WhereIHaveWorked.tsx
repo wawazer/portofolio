@@ -7,7 +7,7 @@ import IdealFresh from "./Descriptions/IdealFresh";
 import AdvancedAgroManagement from "./Descriptions/AdvancedAgroManagement";
 import Fantasia from "./Descriptions/Fantasia";
 import SuperBerry from "./Descriptions/SuperBerry";
-import EnsVision from "./Descriptions/EnsVision";
+import EnsVision from "./Descriptions/RsBedah";
 export default function WhereIHaveWorked() {
   const barRef = React.useRef<HTMLDivElement>(null);
   // ? INFORMATIONAL control the green position using px,
@@ -123,10 +123,10 @@ const CompaniesBar = (props) => {
         <div className="flex flex-row md:flex-col">
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={0}
-            CompanyName="RS. Bedah"
+            CompanyName="RS.Bedah"
             BarPosition={-12}
             BarAvobePosition={1}
-            DescriptionJob="ENSVision"
+            DescriptionJob="RsBedah"
             CompanyNameBackgroundColorGreen={[
               true,
               false,
@@ -139,7 +139,7 @@ const CompaniesBar = (props) => {
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={1}
-            CompanyName="TrouveTavoie"
+            CompanyName="Pelindo"
             BarPosition={32}
             BarAvobePosition={129}
             DescriptionJob="TrouveTavoie"
@@ -155,7 +155,7 @@ const CompaniesBar = (props) => {
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={2}
-            CompanyName="FeverTokens"
+            CompanyName="Distrive"
             BarPosition={76}
             BarAvobePosition={257}
             DescriptionJob="FeverTokens"

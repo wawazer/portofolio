@@ -40,8 +40,9 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-                Hello! My name is Muhammad Zen Wawazer, and I am a passionate
-                with nasi bebek purnama
+                Hello! My name is Muhammad Zen Wawazer, I consider myself a
+                detail-oriented, hardworking person who&apos;s willing to learn
+                at every step pg the way
               </span>
             </div>
             {/* <div className="font-Header ">
