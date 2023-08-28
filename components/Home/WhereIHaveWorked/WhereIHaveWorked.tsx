@@ -7,7 +7,7 @@ import IdealFresh from "./Descriptions/IdealFresh";
 import AdvancedAgroManagement from "./Descriptions/AdvancedAgroManagement";
 import Fantasia from "./Descriptions/Fantasia";
 import SuperBerry from "./Descriptions/SuperBerry";
-import EnsVision from "./Descriptions/RsBedah";
+import EnsVision from "./Descriptions/Pelindo";
 export default function WhereIHaveWorked() {
   const barRef = React.useRef<HTMLDivElement>(null);
   // ? INFORMATIONAL control the green position using px,
@@ -123,22 +123,6 @@ const CompaniesBar = (props) => {
         <div className="flex flex-row md:flex-col">
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={0}
-            CompanyName="RS.Bedah"
-            BarPosition={-12}
-            BarAvobePosition={1}
-            DescriptionJob="RsBedah"
-            CompanyNameBackgroundColorGreen={[
-              true,
-              false,
-              false,
-              false,
-              false,
-              false,
-            ]}
-            setDescriptionJob={props.setDescriptionJob}
-          />
-          <CompanyButton
-            ButtonOrderOfcompanyNameBackgroundColorGreen={1}
             CompanyName="Pelindo"
             BarPosition={32}
             BarAvobePosition={129}
@@ -153,6 +137,23 @@ const CompaniesBar = (props) => {
             ]}
             setDescriptionJob={props.setDescriptionJob}
           />
+          <CompanyButton
+            ButtonOrderOfcompanyNameBackgroundColorGreen={1}
+            CompanyName="RS.Bedah"
+            BarPosition={-12}
+            BarAvobePosition={1}
+            DescriptionJob="RsBedah"
+            CompanyNameBackgroundColorGreen={[
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+            ]}
+            setDescriptionJob={props.setDescriptionJob}
+          />
+
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={2}
             CompanyName="Distrive"
