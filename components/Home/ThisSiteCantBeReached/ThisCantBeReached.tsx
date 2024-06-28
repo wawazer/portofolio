@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 export default function ThisCantBeReached() {
   const [ShowText, setShowText] = React.useState(false);
+  // const ShowText ='zen';
   let CenterWidth = 0;
   let CenterHeight = 0;
   React.useEffect(() => {
@@ -167,7 +168,7 @@ export default function ThisCantBeReached() {
 
         
         
-        {/* Text start from here */}
+        {/* mulai dari sini */}
 
         <motion.div
           initial={{opacity:1}}
@@ -191,7 +192,7 @@ export default function ThisCantBeReached() {
             be reached
           </span>
           <span className="text-gray-500 text-md">
-            <span className="font-bold">www.anaflous.com </span>
+            <span className="font-bold">wawazer.github.com </span>
             unexpectedly{" "}
             {ShowText ? (
               <motion.span

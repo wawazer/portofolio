@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import Startup from "../components/Header/StartupLogo/Startup";
+// import Startup from "../components/Header/StartupLogo/Startup";
 import MyName from "../components/Home/MyName/MyName";
 import { useContext, useEffect, useState, useRef } from "react";
 import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMediaArround";
@@ -59,8 +59,10 @@ export default function Home() {
       setShowElement(false);
       setShowMe(true);
       context.sharedState.finishedLoading = true;
+    //   context.setSharedState(context.sharedState);
+    // }, 10400);
       context.setSharedState(context.sharedState);
-    }, 10400);
+      }, 4400);    
   }, [context, context.sharedState]);
 
   useEffect(() => {
@@ -82,15 +84,7 @@ export default function Home() {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`https://anaflous.com`} />
-        <link rel="canonical" href={`https://anaflous.com`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Manu Arora" />
-        <meta property="og:description" content={meta.description} />
-        <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@titofabdo" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
@@ -103,13 +97,13 @@ export default function Home() {
         ) : (
           <></>
         )}
-        {context.sharedState.finishedLoading ? (
+        {/* {context.sharedState.finishedLoading ? (
           <></>
         ) : ShowElement ? (
           <Startup />
         ) : (
           <></>
-        )}
+        )} */}
         <Header
           finishedLoading={context.sharedState.finishedLoading}
           sectionsRef={homeRef}
@@ -128,7 +122,7 @@ export default function Home() {
         {context.sharedState.finishedLoading ? <GetInTouch /> : <></>}
         {context.sharedState.finishedLoading ? (
           <Footer
-            githubUrl={"https://github.com/hktitof/my-website"}
+            githubUrl={""}
             hideSocialsInDesktop={true}
           />
         ) : (
